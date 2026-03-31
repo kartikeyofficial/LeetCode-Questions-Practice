@@ -4,7 +4,8 @@ public class RemoveDuplicateElementOnly2Max {
     public static int removeElement(int[] nums){
         int k=0;
         for (int i=0;i<nums.length;i++){
-            if (k<2 || nums[i] != nums[k-2]){
+            if (k<2 || nums[i] != nums[k-2]){ // This Condition Means That K iterate less than 2 means(0,1)Iterations
+                                              // And Second Condition tells the Array of nums[i] never be equal nums[k-2]
                 nums[k] = nums[i];
                 System.out.print(nums[i]+",");
                 k++;
